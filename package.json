@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "ts-node Typescript-Drills.ts",
+    "startjs": "node Typescript-Drills.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "typescript": "^4.5.2"
+  }
+}
