@@ -36,7 +36,7 @@ function log(drillNum: number, input: any) {
 
 
 // Drill 3
-// Objective: Implement Union Types
+// Objective: Refactor & Implement Union Types
 // Example: let tomato: null | boolean
 
 // function aFull360() {
@@ -53,7 +53,7 @@ function log(drillNum: number, input: any) {
 // log(3, aFull360())
 
 // Drill 4
-// Objective: Implement enum and Typing
+// Objective: Implement enum & Typing
 // enum response {
 //     strongly_disagree = -2,
 //     disagree,
@@ -141,3 +141,64 @@ function log(drillNum: number, input: any) {
 // log(6, consoleEvaluator(gameSystemAsWell))
 
 
+//                     --- --- --- Generic / Optional Functions --- --- ---
+// Drill 7
+// Objective: Implement & Type Functions
+
+// function comparor(firstArg, secondArg, thirdArg): boolean {
+//     if(firstArg === secondArg || thirdArg && (firstArg === thirdArg))
+//         return true;
+//     return false;
+// }
+// log(7, comparor('kevin', 'josh'));
+// log(7, comparor('kevin', 'josh', 'william'));
+// log(7, comparor(3, 4));
+
+
+//                     --- --- --- Utility Types --- --- ---
+// Drill 8
+// Objective: Implement Partial Typing & Required Typing
+// Example: Required<Type> && Partial<Type>
+
+// interface animal {
+//     name: string,
+//     weight: number,
+//     fur: boolean
+// }
+// interface mammal extends animal {
+//     legs?: number,
+//     arms?: number,
+//     bipedal?: boolean,
+// }
+// let fish = {name: 'Bass', weight: 30}
+// let phil = {name: 'Phil', legs: 2, arms: 2}
+//
+// function isFishorPhil(creature: mammal){
+//     if(creature.name === "Phil" && creature.bipedal){
+//         return 'It is him'
+//     }
+//     return "It isn't"
+// }
+// log(8, isFishorPhil(fish));
+// log(8, isFishorPhil(phil));
+
+
+// Drill 9
+// Objective: Implement Intrinsic String Manipulation Types
+// Uppercase<StringType> && Lowercase<StringType>
+
+// type languages = {
+//     english:"Bye!",
+//     french:"AU REVIOR!",
+//     spanish:"adiós!",
+//     portuguese: "tchau"
+// }
+// function goodbye() {
+//     const english
+//     const french;
+//     const spanish;
+//     const portuguese;
+//
+//     return `${english} ${french} ${spanish} ${portuguese}`
+// }
+// log(9, goodbye());
